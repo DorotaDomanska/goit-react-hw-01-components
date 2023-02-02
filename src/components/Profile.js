@@ -1,17 +1,11 @@
 import { Description } from './/Description';
+import { Stats } from './/Stats';
 
-export const Profile = ({
-  username,
-  tag,
-  location,
-  avatar,
-  stats,
-  children,
-}) => {
+export const Profile = ({ children }) => {
   return (
     <div>
       <Description>{children}</Description>
-      {/* <Stats>{children}</Stats> */}
+      <Stats>{children}</Stats>
     </div>
   );
 };

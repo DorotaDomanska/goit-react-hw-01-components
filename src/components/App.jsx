@@ -1,19 +1,13 @@
-// import user from "../../user.json";
-import { Profile } from './/Profile';
+import user from "../../user.json";
+import data from '../../data.json';
+import friends from '../../friends.json';
+import transactions from '../../transactions.json';
+import { Profile } from './Profile';
+import { Statistics } from './Statistics';
+import { FriendList } from './FriendList';
+import { TransactionHistory } from './TransactionHistory';
 
 export const App = () => {
-  
-  const user = {
-    username: 'Jacques Gluke',
-    tag: 'jgluke',
-    location: 'Ocho Rios, Jamaica',
-    avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-    stats: {
-      followers: 5603,
-      views: 4827,
-      likes: 1308,
-    },
-  };
 
   return (
     <div
@@ -33,6 +27,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />;
+      <TransactionHistory items={transactions} />;
     </div>
   );
 };
