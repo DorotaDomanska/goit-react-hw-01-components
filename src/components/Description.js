@@ -1,0 +1,17 @@
+export const Description = ({
+  username,
+  tag,
+  location,
+  avatar,
+  stats,
+  children,
+}) => {
+  return (
+    <div>
+      <img src={avatar} alt={username} />
+      <p>{username}</p>
+      <p>@{tag}</p>
+      <p>{location}</p>
+    </div>
+  );
+};
