@@ -3,15 +3,15 @@ export const Stats = ({ stats }) => {
     <ul>
       <li>
         <span>Followers</span>
-        <span>{stats.followers}</span>
+        <span>{stats}</span>
       </li>
       <li>
         <span>Views</span>
-        <span>{stats.views}</span>
+        <span>{stats}</span>
       </li>
       <li>
         <span>Likes</span>
-        <span>{stats.likes}</span>
+        <span>{stats}</span>
       </li>
     </ul>
   );

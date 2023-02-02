@@ -1,5 +1,5 @@
-import { Description } from './/Description';
-import { Stats } from './/Stats';
+import { Description } from './Description';
+import { Stats } from './Stats';
 
 export const Profile = ({ children }) => {
   return (
