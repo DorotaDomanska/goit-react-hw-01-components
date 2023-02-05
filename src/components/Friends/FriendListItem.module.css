@@ -13,6 +13,7 @@
 }
 
 .status::after {
+  display: block;
   content: '';
   border-radius: 50%;
   background-color: red;
@@ -22,6 +23,7 @@
 }
 
 .status::after.isOnline {
+  display: block;
   background-color: rgb(8, 188, 8);
 }
 
