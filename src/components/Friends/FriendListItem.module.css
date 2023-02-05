@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
   font-size: 25px;
 }
@@ -12,7 +12,7 @@
   margin-bottom: 10px;
 }
 
-.item::before {
+.status::after {
   content: '';
   border-radius: 50%;
   background-color: red;
@@ -21,7 +21,7 @@
   margin-right: 20px;
 }
 
-.item::before.isOnline {
+.status::after.isOnline {
   background-color: rgb(8, 188, 8);
 }
 

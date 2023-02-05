@@ -1,12 +1,18 @@
-// export const StatList = ({ stats }) => {
-//   return (
-//     <ul>
-//       {stats.map(stat => (
-//         <li key={stat.id}>
-//           <span>{stat.label}</span>
-//           <span>{stat.percentage}</span>
-//         </li>
-//       ))}
-//     </ul>
-//   );
-// };
+import css from './StatList.module.css';
+import PropTypes from 'prop-types';
+
+export const StatList = ({ label, percentage }) => {
+  return (
+    <li className={css.statItem}>
+      <span>{label}</span>
+      <span>{percentage}%</span>
+    </li>
+  );
+};
+
+StatList.propTypes = PropTypes.arrayOf(
+  PropTypes.shape({
+    label: PropTypes.string,
+    percentage: PropTypes.number.isRequired,
+  })
+);

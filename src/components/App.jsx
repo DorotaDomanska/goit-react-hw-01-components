@@ -14,6 +14,7 @@ export const App = () => {
         // height: '100vh',
         display: 'flex',
         flexDirection: 'column',
+        gap: 30,
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -27,7 +28,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />
+      <Statistics title={"Upload stats"} stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
