@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item::before {
+  content: '';
+  border-radius: 50%;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+.item::before.isOnline {
+  background-color: rgb(8, 188, 8);
+}
+
+.avatar {
+  margin-right: 10px;
+}
