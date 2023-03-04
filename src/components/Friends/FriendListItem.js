@@ -11,7 +11,7 @@ export const FriendListItem = ({ imgUrl, name, online }) => {
         })}
       ></span>
       <img className={css.avatar} src={imgUrl} alt="User avatar" width="48" />
-      <p className={css.name}>{name}</p>
+      <p>{name}</p>
     </li>
   );
 };

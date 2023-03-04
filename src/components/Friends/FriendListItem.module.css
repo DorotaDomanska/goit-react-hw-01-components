@@ -12,9 +12,8 @@
   margin-bottom: 10px;
 }
 
-.status::after {
+.status {
   display: block;
-  content: '';
   border-radius: 50%;
   background-color: red;
   width: 18px;
@@ -22,7 +21,7 @@
   margin-right: 20px;
 }
 
-.status::after.isOnline {
+.status.isOnline {
   display: block;
   background-color: rgb(8, 188, 8);
 }
